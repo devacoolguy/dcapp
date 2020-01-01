@@ -1,0 +1,144 @@
+2020-01-01 21:57:03,854 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 932 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 21:57:03,881 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 21:57:03,885 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 21:57:24,144 INFO c.d.d.DCApplication [main] Started DCApplication in 21.729 seconds (JVM running for 24.789)
+2020-01-01 21:58:25,988 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 21:58:33,270 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 42P01
+2020-01-01 21:58:33,272 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: relation "hibernate_sequence" does not exist
+  Position: 17
+2020-01-01 21:58:33,613 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-01-01 22:05:04,115 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 304 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:05:04,145 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:05:04,148 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 22:05:47,018 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table c_country 
+       add column c_contry_id int8 not null" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table c_country 
+       add column c_contry_id int8 not null" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:580) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862) ~[spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799) ~[spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) [spring-context-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) [spring-context-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at com.dc.dcapp.DCApplication.main(DCApplication.java:10) [classes/:?]
+Caused by: org.postgresql.util.PSQLException: ERROR: column "c_contry_id" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269) ~[postgresql-42.2.8.jar:42.2.8]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.1.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.8.Final.jar:5.4.8.Final]
+	... 34 more
+2020-01-01 22:05:55,526 INFO c.d.d.DCApplication [main] Started DCApplication in 52.897 seconds (JVM running for 56.177)
+2020-01-01 22:08:59,101 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 4388 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:08:59,128 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:08:59,132 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 22:09:12,104 INFO c.d.d.DCApplication [main] Started DCApplication in 14.529 seconds (JVM running for 17.272)
+2020-01-01 22:09:27,231 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 22:09:35,224 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 42804
+2020-01-01 22:09:35,225 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: column "createdby" is of type numeric but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 255
+2020-01-01 22:09:35,592 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2020-01-01 22:12:16,510 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 12272 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:12:16,537 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:12:16,540 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 22:12:29,008 INFO c.d.d.DCApplication [main] Started DCApplication in 13.979 seconds (JVM running for 16.795)
+2020-01-01 22:12:59,842 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 22:13:07,388 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 42804
+2020-01-01 22:13:07,388 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: column "createdby" is of type numeric but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 255
+2020-01-01 22:13:07,716 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2020-01-01 22:18:05,164 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 8396 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:18:05,195 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:18:05,199 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 22:18:23,979 INFO c.d.d.DCApplication [main] Started DCApplication in 20.346 seconds (JVM running for 23.111)
+2020-01-01 22:18:27,744 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 22:18:34,577 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 23502
+2020-01-01 22:18:34,578 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: null value in column "ad_client_id" violates not-null constraint
+  Detail: Failing row contains (3, null, null, null, 2020-01-01 22:18:27.744, null, 2020-01-01 22:18:35.97125, null, null, null, null, null, N, null, N, N, null, Y, N, N, null, null, null, null, null, N, null, null, null, null, null, null, 0, 0, 0, null, null, 0, 0, null, null, null, null, Y, null, null, null, null, null, null, null, null, null, null, null, null, null, N, null, null, O, null, null, null, null, null, null, null, N, N, null, null, N, null, null, null, null, null, null, null, null, N, null, null, null, null, N, N, Test, null, User, null, null, null, N, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, License 123, null, Y, null).
+2020-01-01 22:18:34,945 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ad_client_id]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2020-01-01 22:23:01,836 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 9168 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:23:01,865 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:23:01,871 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 22:23:14,178 INFO c.d.d.DCApplication [main] Started DCApplication in 13.93 seconds (JVM running for 16.622)
+2020-01-01 22:23:19,343 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 22:23:25,754 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 23502
+2020-01-01 22:23:25,755 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: null value in column "ad_org_id" violates not-null constraint
+  Detail: Failing row contains (4, 11, null, null, 2020-01-01 22:23:19.343, null, 2020-01-01 22:23:27.026918, null, null, null, null, null, N, null, N, N, null, Y, N, N, null, null, null, null, null, N, null, null, null, null, null, null, 0, 0, 0, null, null, 0, 0, null, null, null, null, Y, null, null, null, null, null, null, null, null, null, null, null, null, null, N, null, null, O, null, null, null, null, null, null, null, N, N, null, null, N, null, null, null, null, null, null, null, null, N, null, null, null, null, N, N, Test, null, User, null, null, null, N, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, License 123, null, Y, null).
+2020-01-01 22:23:26,103 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ad_org_id]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2020-01-01 22:32:50,669 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 7196 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:32:50,700 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:32:50,703 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 22:33:05,648 INFO c.d.d.DCApplication [main] Started DCApplication in 16.511 seconds (JVM running for 19.3)
+2020-01-01 22:33:12,306 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 22:33:20,523 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 23502
+2020-01-01 22:33:20,523 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: null value in column "isactive" violates not-null constraint
+  Detail: Failing row contains (5, 11, 11, null, 2020-01-01 22:33:12.307, null, 2020-01-01 22:33:21.527788, null, null, null, null, null, null, null, N, N, null, Y, N, N, null, null, null, null, null, N, null, null, null, null, null, null, 0, 0, 0, null, null, 0, 0, null, null, null, null, Y, null, null, null, null, null, null, null, null, null, null, null, null, null, N, null, null, O, null, null, null, null, null, null, null, N, N, null, null, N, null, null, null, null, null, null, null, null, N, null, null, null, null, N, N, Test, null, User, null, null, null, N, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, License 123, null, Y, 2020-01-01 22:33:12.307).
+2020-01-01 22:33:20,853 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [isactive]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2020-01-01 22:59:59,954 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 13144 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 22:59:59,982 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 22:59:59,985 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 23:00:23,038 INFO c.d.d.DCApplication [main] Started DCApplication in 24.588 seconds (JVM running for 28.394)
+2020-01-01 23:00:27,281 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 23:00:34,040 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 42703
+2020-01-01 23:00:34,040 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: column "espotacexempt" of relation "c_bpartner" does not exist
+  Position: 287
+2020-01-01 23:00:34,373 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2020-01-01 23:01:58,360 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 1212 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 23:01:58,413 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 23:01:58,417 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 23:02:13,673 INFO c.d.d.DCApplication [main] Started DCApplication in 17.007 seconds (JVM running for 20.09)
+2020-01-01 23:02:20,560 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 23:02:26,955 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 42703
+2020-01-01 23:02:26,955 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: column "osonetime" of relation "c_bpartner" does not exist
+  Position: 363
+2020-01-01 23:02:27,540 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2020-01-01 23:03:13,673 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 11036 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 23:03:13,701 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 23:03:13,706 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 23:03:29,173 INFO c.d.d.DCApplication [main] Started DCApplication in 17.283 seconds (JVM running for 20.22)
+2020-01-01 23:03:32,795 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
+2020-01-01 23:03:39,965 ERROR c.d.d.c.SignUpController [http-nio-8080-exec-1] Error saving user org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection; nested exception is org.hibernate.TransactionException: Unable to commit against JDBC Connection
+2020-01-01 23:06:51,464 INFO c.d.d.DCApplication [main] Starting DCApplication on DESKTOP-AJUO6BG with PID 9384 (C:\Users\idnam\eclipse-workspace\dcapp\target\classes started by idnam in C:\Users\idnam\eclipse-workspace\dcapp)
+2020-01-01 23:06:51,494 DEBUG c.d.d.DCApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-01-01 23:06:51,499 INFO c.d.d.DCApplication [main] No active profile set, falling back to default profiles: default
+2020-01-01 23:07:04,555 INFO c.d.d.DCApplication [main] Started DCApplication in 14.567 seconds (JVM running for 17.586)
+2020-01-01 23:07:06,986 INFO c.d.d.c.SignUpController [http-nio-8080-exec-1] Add new account 
